@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		 <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+	.header-banner{
+		background: #feeae9;
+		padding:20px;
+		border-radius:5px;
+	}
+	.buy-btn{
+		background-color:#ff3584;
+		color:white;
+		font-size:18px;
+		fon-weight:700;
+	}
+	.banner-price{
+		font-size:32px;
+		font-weight:bold;
+		color:#ff3584;
+	}
+	.banner-title{
+		font-size:42px;
+		font-weight:bold;
+		letter-spacing:1.2px;
+	}
+ .banner-img{
+		width:320px;
+		height:320px;
+	}
+	.categori-shoes{
+		background:#00fff0;
+		color:white;
+	}
+	.categori-watch{
+		background:#ff3684;
+		color:white;
+	}
+	.categori-bag{
+		background:#112233;
+		color:white;
+	}
+	.bottom-form{
+		background:#feeae9;
+		border-radius:10px;
+		padding:70px 30px;
+	}
+	footer{
+		background:#112233;
+		color:white;
+		padding:30px;
+		text-align:center;
+		margin-top:70px;
+	}
+	@media screen and (max-width:600px){
+		.banner-title{
+			font-size:24px;
+		}
+		.banner-price{
+			font-size:20px;
+		}
+		.carousel-display{
+			flex-direction:column-reverse;
+		}
+		.banner-img{
+			width:280px;
+			height:280px;
+		}
+	}
+	
+</style>
+  </head>
+  <body>
+		  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-md rounded">
+      <div class="container-md">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" width="180" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Backpack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-banner container-md my-3">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row carousel-display d-flex align-items-center ">
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6">
+                <h2 class='banner-title'>Cool Dude Headphone</h2>
+                <p>This is not just a headephone, it is always almost around the world popularity and sacripriced by user Experience.</p>
+                <h3 class="banner-price">$420</h3>
+                <a href="#" class="btn buy-btn">Buy Now</a>
+              </div>
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6 headephone">
+                <img class='banner-img' src="./images/banner-images/headphone.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-display d-flex align-items-center">
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6 ">
+                <h2 class='banner-title'>Cool Dude Headphone</h2>
+                <p>This is not just a headephone, it is always almost around the world popularity and sacripriced by user Experience.</p>
+                <h3 class="banner-price">$420</h3>
+                <a href="#" class="btn buy-btn">Buy Now</a>
+              </div>
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6 headephone">
+                <img class='banner-img' src="./images/banner-images/xbox.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-display d-flex align-items-center">
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6">
+                <h2 class='banner-title'>Cool Dude Headphone</h2>
+                <p>This is not just a headephone, it is always almost around the world popularity and sacripriced by user Experience.</p>
+                <h3 class="banner-price">$420</h3>
+                <a href="#" class="btn buy-btn">Buy Now</a>
+              </div>
+              <div class="col-sm-6 col-12 col-lg-6 col-md-6 headephone">
+                <img class='banner-img' src="./images/banner-images/tv.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+<main>
+		<section class="categories container-md mt-5 py-4">
+		<div class="row g-3">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+					<div class="watch-cat d-flex justify-content-around align-items-center categori-watch shadow-md rounded p-2">
+						<h3>Watch</h3>
+						<img src="./images/categories/watch.png" alt="">
+					</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+					<div class="watch-cat d-flex justify-content-around align-items-center categori-bag shadow-md rounded p-2">
+						<h3>Bag</h3>
+						<img src="./images/categories/bag.png" alt="">
+					</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+					<div class="watch-cat d-flex justify-content-around align-items-center categori-shoes shadow-md rounded p-2">
+						<h3>Shoes</h3>
+						<img src="./images/categories/shoes.png" alt="">
+					</div>
+			</div>
+		</div>
+		</section>
+		<section class="container-md py-5">
+			<h2 class="shoes-title">Shoes</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Supply 350</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$420</h3>
+    			<a href="#" class="btn buy-btn">Buy Now</a>
+				</div>
+				</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/shoes/shoe-2.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Nike 360</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$250</h3>
+    			<a href="#" class="btn buy-btn">Buy Now</a>
+				</div>
+				</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/shoes/shoe-3.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Red Airmax</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$870</h3>
+    			<a href="#" class="btn buy-btn">Buy Now </a>
+				</div>
+				</div>
+			
+			</div>
+		</section>
+			<section class="container-md py-5">
+			<h2 class="bags-title">Bags</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/bags/bag-1.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Red Color Bag</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$820</h3>
+    			<a href="#" class="btn buy-btn">Buy Now</a>
+				</div>
+				</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/bags/bag-2.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Blue Color Bag</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$250</h3>
+    			<a href="#" class="btn buy-btn">Buy Now</a>
+				</div>
+				</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 rounded shadow-sm card">
+           <img src="./images/bags/bag-3.png" class="card-img-top" alt="...">
+  			<div class="card-body">
+    			<h5 class="card-title">Black Color Bag</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h3 class="banner-price">$870</h3>
+    			<a href="#" class="btn buy-btn">Buy Now </a>
+				</div>
+				</div>
+			
+			</div>
+		</section>
+		<section class="container-md ">
+			<div class="container-sm bottom-form">
+				<h2 class='text-uppercase'>LET'S STAY IN TOUCH</h2>
+				<p class='font-weight-bol'>Get updates on sales, specials and more</p>
+				<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+	<input type='submit' class="buy-btn btn"value='Submit'>
+			</div>
+		</section>
+</main>
+<footer>
+	&copy;Copywrite 2022 All right reserved by Hr Meheraj
+</footer>
+<!-- JavasCript Bundle  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
